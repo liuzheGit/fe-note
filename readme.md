@@ -8,5 +8,4 @@
 
 # 目录
 
-- [2019](./src/2019)
-  - [JavaScript](./src/2019/first-week/JavaScript.md)
+- [JavaScript](https://github.com/liuzheGit/fe-note/blob/master/src/2019/1/first-week/Javascript.md)
