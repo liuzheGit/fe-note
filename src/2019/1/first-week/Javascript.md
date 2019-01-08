@@ -16,3 +16,28 @@ Body  mixin 的 json() 方法使用一个 Response 流，并将其读取完成�
 
 ### 解决自动在html写入单独文件
 [web-webpack-plugin](https://github.com/gwuhaolin/web-webpack-plugin)
+
+
+## js博客-github
+
+- [jawil 玄学](https://github.com/jawil/blog)
+- [mqyqingfeng](https://github.com/mqyqingfeng/Blog)
+- [SunShinewyf](https://github.com/SunShinewyf/issue-blog)
+
+## js面试题
+
+```js
+console.log(foo);
+
+function foo(){
+    console.log("foo");
+}
+var foo = 1;
+```
+会打印函数，而不是 undefined 。
+
+这是因为在进入执行上下文时，首先会处理函数声明，其次会处理变量声明，如果如果变量名称跟已经声明的形式参数或函数相同，则变量声明不会干扰已经存在的这类属性。
+
+## js正则的学习
+
+https://github.com/jawil/blog/issues/20
