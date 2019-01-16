@@ -41,3 +41,8 @@ var foo = 1;
 ## js正则的学习
 
 https://github.com/jawil/blog/issues/20
+
+## 春节活动思路
+
+- [canvas](https://juejin.im/post/599a322bf265da246f37f3ae)
+- [跑马灯](https://www.cnblogs.com/MLGB/p/3767917.html)
