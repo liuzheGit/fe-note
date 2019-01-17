@@ -51,3 +51,28 @@ a -> b -> d
 第二种方案 可以用: `git revert -n commit ID` 实现以退为进.
 git revert 不同于 git reset  它不会擦除"回退"之后的 commit_id ,而是正常的当做一次"commit"，产生一次新的操作记录，所以可以push，不会让你再pull
 
+
+## sublime text3
+
+### 打开 `Package Control` 的安装界面报错 : there are no package available for installation?
+
+[参考自](https://www.cnblogs.com/jellify/p/9522477.html)
+分析原因发现，在利用sublime进行插件下载时，sublime会调用channel_v3.json文件，点击Preferences->Package Setting->Package Control ->Setting Default，可以看到该文件是放置在网络中进行读取的，而由于GFW的原因，导致无法读取该文件（但是竟然可以直接访问？？），这也就是导致插件无法下载的原因
+```json
+默认的是这样的
+	{    
+	    "channels": [
+	        "https://packagecontrol.io/channel_v3.json"
+	    ]
+	}
+
+改为 本地的 json文件路径
+	{    
+	    "channels": [
+	        "F:/subl/channel_v3.json"
+	    ]
+	}
+```
+
+
+我们在Preferences->Package Setting->Package Control ->Setting User 中，可以进行用户设置，我们可以将文件下载后，进行本地访问。首先访问https://packagecontrol.io/channel_v3.json ，将源代码复制后，新建文件为channel_v3.json（也可以从github中获取源文件），然后在Setting User设置中，添加代码，至此，就可以正常使用install package下载插件。
