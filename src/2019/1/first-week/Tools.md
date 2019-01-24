@@ -76,3 +76,9 @@ git revert 不同于 git reset  它不会擦除"回退"之后的 commit_id ,而�
 
 
 我们在Preferences->Package Setting->Package Control ->Setting User 中，可以进行用户设置，我们可以将文件下载后，进行本地访问。首先访问https://packagecontrol.io/channel_v3.json ，将源代码复制后，新建文件为channel_v3.json（也可以从github中获取源文件），然后在Setting User设置中，添加代码，至此，就可以正常使用install package下载插件。
+
+## 关于字体
+
+1.宋体、黑体、仿宋、隶属、楷体、幼圆 这些属于通用字体，没有著作权，是可以用来商用的。
+2.淘宝购买字体需要版权方认可
+3.五款免费字体1、思源字体 adobe和Google合作开发的开元字体可以免费商用 2、站酷字体 3、庞门正道标题体4、濑户字体5、手书体中文简体
