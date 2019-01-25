@@ -8,4 +8,4 @@
 
 # 目录
 
-- [JavaScript](https://github.com/liuzheGit/fe-note/blob/master/src/2019/1/first-week/Javascript.md)
+- [1月](https://github.com/liuzheGit/fe-note/blob/master/src/2019/1/1%E6%9C%88readme.md)
