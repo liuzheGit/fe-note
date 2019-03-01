@@ -18,4 +18,4 @@
 - 滚动切换视差 [localscroll](http://www.jq22.com/jquery-info1665)
 - 视觉差特效引擎 [Parallax](http://www.htmleaf.com/Demo/201508152420.html)
 - d动画插件库 [wow](https://github.com/matthieua/WOW) 依赖 animate.css
-- 背景视频播放 [mb.YTPlayer](
+- 背景视频播放 [mb.YTPlayer](http://pupunzi.open-lab.com/mb-jquery-components/jquery-mb-ytplayer/)
