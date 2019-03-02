@@ -9,6 +9,15 @@
 **关于requestAnimationFrame**
 - [raf-plus库](https://github.com/weiying-shenzhen/raf-plus/blob/master/README_zh.md)是有管理队列功能的 window.requestAnimationFrame，他保证在同一帧内最多只会执行一次相同的函数。
 
+**用clearfix清楚浮动**
+```css
+.clearfix::after{
+  content: '';
+  display: block;  /* 而不是inline-block */
+  clear: both;
+}
+```
+
 ## 库文件
 
 - 灯箱效果 [magnificPopup](https://github.com/dimsemenov/Magnific-Popup)
