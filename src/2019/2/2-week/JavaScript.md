@@ -28,3 +28,17 @@
 - 视觉差特效引擎 [Parallax](http://www.htmleaf.com/Demo/201508152420.html)
 - d动画插件库 [wow](https://github.com/matthieua/WOW) 依赖 animate.css
 - 背景视频播放 [mb.YTPlayer](http://pupunzi.open-lab.com/mb-jquery-components/jquery-mb-ytplayer/)
+
+
+## 前端博客
+
+**博友**
+- [xdlmr](https://xdlmr.github.io/)
+- [ky](https://yk1062008412.github.io/)
+
+
+## Material组件
+
+[Material-web](https://github.com/material-components/material-components-web)
+
+[Vue组件](https://github.com/stasson/vue-mdc-adapter)
