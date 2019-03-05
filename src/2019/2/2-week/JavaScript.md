@@ -35,6 +35,7 @@
 **博友**
 - [xdlmr](https://xdlmr.github.io/)
 - [ky](https://yk1062008412.github.io/)
+- [qi](https://github.com/QiShaoXuan/animate_resume_ts)
 
 
 ## Material组件
