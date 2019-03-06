@@ -1,6 +1,9 @@
 ## 笔记
 
 - 对象中的箭头函数中的this不是 对象的this, 而是对象所在的作用域
+- 用Array.prototype.slice() 来获取数组的拷贝
+- 想要实现链式调用, 需要在函数的方法中`return this`;
+- 命名规范, 类的私有属性和方法前用 `_` 下划线区分;
 
 
 ## 知识点
@@ -28,6 +31,8 @@
 - 视觉差特效引擎 [Parallax](http://www.htmleaf.com/Demo/201508152420.html)
 - d动画插件库 [wow](https://github.com/matthieua/WOW) 依赖 animate.css
 - 背景视频播放 [mb.YTPlayer](http://pupunzi.open-lab.com/mb-jquery-components/jquery-mb-ytplayer/)
+- [better-scroll](https://github.com/ustbhuangyi/better-scroll): 提高滚动体验插件
+	- [中文文档](https://ustbhuangyi.github.io/better-scroll/doc/zh-hans/options-advanced.html)
 
 
 ## 前端博客

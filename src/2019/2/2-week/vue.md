@@ -1,5 +1,7 @@
 # vue-router
 
+- vue-router 中 规则是 : routes  而不是 routers
+
 固定格式:
 
 ```js
@@ -40,3 +42,7 @@ props:{
   }
 }
 ```
+
+## vue-cli@3
+
+- 项目名不能有大写
