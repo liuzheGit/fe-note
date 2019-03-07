@@ -49,3 +49,54 @@
 [Material-web](https://github.com/material-components/material-components-web)
 
 [Vue组件](https://github.com/stasson/vue-mdc-adapter)
+
+
+## OOP
+- 用 `defineProperty` 修改 configurable 配置属性 为 false 的时候, 如果此时目标属性没有 , 则 之后在设置目标属性, 则无效
+	如果之前的对象有目标属性,则 可以生效
+	```js
+		// 没目标属性	
+		var person = {};
+		Object.defineProperty(person, 'name', {
+			configurable: false,
+			value: 'lttztt'
+		});
+		
+		person.name = 'jack';
+		
+		console.log(person.name)   // lttztt
+		// 有目标属性
+		var person = {
+			name: 'jack'
+		};
+		Object.defineProperty(person, 'name', {
+			configurable: false,
+			value: 'lttztt'
+		});
+		
+		person.name = 'tom';
+		
+		console.log(person.name)   // tom
+	```
+- 多次调用`Object.defineProperty` 修改同一个属性, 如果某次修改 `configurable: false`, 则之后的
+	再次设置就会有限制;
+- 访问器属性 `getter / setter` 只能通过 `Object.defineProperty` 来定义 (用get和set)
+- 用 `newObject.constructor === 构造函数` 检测对象的类型
+- 检测对象类型用 `newObject instanceof 构造函数`
+- `__proto__` 是存在于 实例和 构造函数的原型对象之间的.
+- 虽然实例中无法用`__proto__`, 但是判断 实例是否属于构造函数创建的可以用: 
+	`Person.prototype.isPrototypeOf(person1)   // true` 代表是;
+- 还有一个ES5新增的 `Object.getPrototypeOf()` 返回`__proto__`值, 例如:
+	`Object.getPrototypeOf(person1) === Person.prototype // true`
+	- 也就是说可以通过 `Object.getPrototypeOf()` 方便的取得实例对象的原型对象;
+- `delete`操作符可以完全删除实例属性
+- 使用 `hasOwmProterty`方法可以检测一个属性是存在于实例中, 还是原原型对象中;
+- 使用 `hasPrototypeProperty(person, 'name')`方法可以判断 属性是否从存在于原型对象上;
+- 原型的属性方法过多可以使用 `Person.prototype = {}`, 指向一个对象, 但此时使用 `person.constructor === Person // false`,
+	如果要解决这个问题可以在 字面量 `{}`中 添加 `constructor: Perons,`
+- 原型上的方法可是实时的反应在实例上, 但是 如果此时把 原型指向一个对象,则会改变这个动态性;
+- js继承本质上是重写原型对象, 代之以一个新类型的实例
+- 子类需要覆盖父类的方法的时候, 需要在重写原型之后进行
+- 当继承的有引用类型的值的时候, 会导致子类的实例维护的是同一份引用类型的属性.
+	- 解决: 子类的构造函数调用 父类的方法, 并且给当前this传给父类, `Animal.call(this)`;
+	- 这样做的好处还有一个, 可以给父类传递参数
