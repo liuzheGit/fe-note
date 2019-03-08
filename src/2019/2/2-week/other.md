@@ -9,3 +9,4 @@
 ## linux
 
 - [linux脚本-ssr](https://github.com/liuzheGit/doubi)
+- 使用 `sudo -i` 快速切换到root用户
