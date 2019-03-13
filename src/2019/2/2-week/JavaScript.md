@@ -119,3 +119,7 @@
 - 当继承的有引用类型的值的时候, 会导致子类的实例维护的是同一份引用类型的属性.
 	- 解决: 子类的构造函数调用 父类的方法, 并且给当前this传给父类, `Animal.call(this)`;
 	- 这样做的好处还有一个, 可以给父类传递参数
+
+
+
+## [职业路线图](https://github.com/kamranahmedse/developer-roadmap)
