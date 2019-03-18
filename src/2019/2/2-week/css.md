@@ -47,3 +47,7 @@ background-size: 这个属性有两个值,
 ## svg
 
 - [SVG-Loaders](https://github.com/SamHerbert/SVG-Loaders)
+
+## html
+
+- marquee 标签做滚动字幕 

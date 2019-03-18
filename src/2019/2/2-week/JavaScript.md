@@ -121,6 +121,8 @@
 	- 这样做的好处还有一个, 可以给父类传递参数
 - 数组去重中用到: arr.indexOf(item) 小于0则不再数组中
 - [ 图片知识 (全)](https://github.com/LiangJunrong/document-library/blob/master/other-library/Interview/PersonalExperience/Other-%E5%9B%BE%E7%89%87.md)
+- [节流防抖](https://mp.weixin.qq.com/s/Vkshf-nEDwo2ODUJhxgzVA)
+- [react教程](https://github.com/tyroprogrammer/learn-react-app)
 
 
 
