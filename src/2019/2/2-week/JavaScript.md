@@ -123,6 +123,35 @@
 - [ 图片知识 (全)](https://github.com/LiangJunrong/document-library/blob/master/other-library/Interview/PersonalExperience/Other-%E5%9B%BE%E7%89%87.md)
 - [节流防抖](https://mp.weixin.qq.com/s/Vkshf-nEDwo2ODUJhxgzVA)
 - [react教程](https://github.com/tyroprogrammer/learn-react-app)
+- es6中rest参数是一个数组
+- rest参数在一个函数参数中只能有一个且只能是最后一个
+- Array.of(), 总会返回参数值组成的数组, 可以用`return [].slice.call(arguments)` 实现
+- 字符串带`includes`方法, `'hello'.includes('0')  // true` , 找到返回true, 否则返回false
+- 数组中在`es2016`中 加入了 类似 `includes`方法, 用来替代 `indexOf`;
+
+### 数组去重
+```js
+  function uniq(arr){
+    return Array.from(new Set(arr));
+  }
+  function uniq2(arr){
+    let res = [];
+    arr.map((item)=>{
+      if(res.indexOf(item) < 0){
+        res.push(item);
+      }
+    });
+    return res;
+  }
+  function uniq3(arr){
+    return arr.reduce((arr, cur)=>{
+      if(arr.indexOf(cur) < 0){
+        arr.push(cur);
+      }
+      return arr;
+    },[]);
+  }
+```
 
 
 
