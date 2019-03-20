@@ -48,6 +48,39 @@ background-size: 这个属性有两个值,
 
 - [SVG-Loaders](https://github.com/SamHerbert/SVG-Loaders)
 
-## html
 
-- marquee 标签做滚动字幕 
+## rem
+
+- [不错的rem+flexible讲解](https://www.cnblogs.com/lyzg/p/5058356.html);
+
+
+### 关键帧动画 
+```css
+@keyframes dida {
+    0%,20%,53%,80%,to {
+        -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
+        animation-timing-function: cubic-bezier(.215,.61,.355,1);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+
+    40%,43% {
+        -webkit-animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+        animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+        -webkit-transform: translate3d(0,-30px,0);
+        transform: translate3d(0,-30px,0)
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+        animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+        -webkit-transform: translate3d(0,-15px,0);
+        transform: translate3d(0,-15px,0)
+    }
+
+    90% {
+        -webkit-transform: translate3d(0,-4px,0);
+        transform: translate3d(0,-4px,0)
+    }
+}
+```
