@@ -10,6 +10,7 @@
 - [腾讯移动端web解决方案](https://github.com/AlloyTeam/Mars)
 - [AlloyFiger手势库(腾讯)](https://github.com/AlloyTeam/AlloyFinger)
 - 鼠标滚轮在window.onscroll 的时候 , 滚动一次触发12次
+- `document.documentElement`获取的是`html`
 
 
 ## animatd.css 拷贝类 实践
