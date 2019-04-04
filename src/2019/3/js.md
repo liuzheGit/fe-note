@@ -4,6 +4,8 @@
 - [underscore源码分析阅读](https://github.com/hanzichi/underscore-analysis)
 - [underscore的实用](https://www.cnblogs.com/zzsdream/p/6843864.html)
 - `new Date()` 直接用于计算会变成时间戳哦
+### event.currentTarget&&event.target
+> target:是事件触发的元素， currentTarget: 是实际绑定的元素
 
 
 ## npm 方法
