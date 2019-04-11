@@ -41,3 +41,21 @@ function checkIP(ip){
 2. 用`document.getBoundingClientRect()`获取元素的相对屏幕的各种值;
 3. 利用 `window.addEventListener('scroll')`来监听每次的距离和 `window.innerHeiht`的对比
 4. 节流来提高性能, 避免scroll触发加载img事件的多次触发;
+
+
+## 小程序
+
+- 如果 app.json 中没有配置页面 title显示不正确
+1. 登录发送的数据
+var data = {
+	encrypteddata: getres.encryptedData,  // wx.getUserInfo success 返回的数据
+	iv: getres.iv,  // wx.getUserInfo success 返回的数据
+	code: res.code  // wx.login success 成功的数据
+};
+
+  // 
+  clickKaodian() {
+    wx.navigateTo({
+      url: 'kaodian/index',
+    })
+  },

@@ -1,0 +1,26 @@
+# 单词
+
+- ioslate: 使隔离
+- proper: 合适的
+- tunnel: 隧道, 挖
+- expose: 暴露
+- flat: 平的
+- amend: 修正
+- detected: 发现
+- profile: 轮廓
+- equals: 平等的
+- hollow: 空的
+- indicator: 指示器
+- represent: 代表
+- vibrate: 震动
+- recently:最近
+- primer: 初级的
+- slightly：稍微的
+- instance: 实例
+- benefits: 利益，福利
+- implement: 实施
+- moody: 喜怒无常的
+- appear: 出现
+- inevitable: 不可避免的
+- abyss: 深渊
+- dizzying: 令人混乱的
