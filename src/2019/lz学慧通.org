@@ -1,0 +1,81 @@
+** 学慧通汇总
+
+*** 现有的直播东西
+   roomTitle: "注册安全工程师免费公开课"
+   desc: ""
+   announcement: "暂无"
+   pafView: 1
+   chatView: 1
+   qaView: 0
+   viewerId: '69fc998466f142709297902049ebd3cc'
+   groupid: ''
+   viewerName: 'liuzhe'
+   liveId: "996"
+
+*** cc直播
+1. 登录页面用到 CC账号ID、直播间ID、 昵称、 密码
+2.
+
+*** 汇总
+
+1. 我的会员页面没有接口
+2. 个人中心/消息中心 获取成功的提示不需要
+3. 修改密码页面,发送验证码的时候 加上loading
+4. 简历页面添加个人介绍的时候, 如果没有基本信息, 会提示去填写基本信息, 太突兀了
+
+*** 我经手页面
+1. pages/center/ctemplate/jianli/jianli  // 我的简历编辑
+2. pages/center/ctemplate/jianli/basicsxx  // 简历基本信息
+3. pages/center/ctemplate/jianli/yixiang  // 求职意向
+4. pages/center/ctemplate/jianli/jiaoyu  // 教育经历
+**** pages/center/ctemplate/jianli/work // 工作经历
+**** pages/center/ctemplate/jianli/peixun // 培训经历
+**** pages/center/ctemplate/jianli/geren  // 自我评价
+**** pages/center/passwd/chnagePasswd
+**** pages/center/ctemplate/vip/vip       // 我的会员展示和提示开通
+**** pages/center/ctemplate/vipPay/vipPay   // 会员的支付
+**** pages/center/ctemplate/geren/geren     // 个人信息
+**** pages/center/passwd/changePasswd       // 更改密码获取验证码
+**** pages/center/passwd/index              // 更改输入密码
+**** pages/center/passwd/passSuccess        // 更改成功
+
+
+
+*** 需要加phone/login组件的页面
+
+*** 所有没有加绑定手机号的页面（接口返回201 提示）
+**** 充值页
+
+
+*** 问题
+**** select页面， 出现了 `Cannot read property 'Userid' of undefined;at "pages/select/select" page lifeCycleMethod onLoad function`
+**** 梳理获取getApp() 和 wx.getStorageSync();
+**** 个人中心 授权过后没有正确展示 ， 问题是
+
+
+
+
+*** 4-13 页面功能梳理
+**** 我的会员页面添加开通后的信息
+**** 缺少立即充值页面
+
+*** wxss技巧
+**** 设置page的背景可以在wxss中用： `page{background: #f5f5f5;}`
+
+
+     
+*** 修改思路
+1. 在个人中心页面已经授权过的情况下会把 用户的name和头像 保存在 app.userData中
+2. 课程详情里的老师展示和收起, 用了三个数组, 一个是存放双向绑定的数组, 一个是所有老师的数组, 还有一个是第一个老师展示(这个初始化过后,就不会改变了)
+3. 
+
+*** 把所有的phone组件改为页面跳转
+
+1. geren.js 中的不确定判断对不对
+2. jianli.js 中判断不确定
+3. jianli.js 中 onshow的时候 获取微信用户信息 不知道对不对
+4. kecheng.js / order.js / orderdetail.js 中判断else 展示 alert
+5. liveCenter.js 中获取近期直播没做判断
+
+** note
+1. 切图的大小750*1334
